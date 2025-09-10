@@ -1,9 +1,9 @@
-import HeroSlider from './component/HeroSection';
-import Image from "next/image";
-import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import HeroSlider from './component/HeroSection';
 import App from './component/testimonies';
 import WhyChooseUs from './component/whychooseus';
+import Navbar from "./component/Navbar";
+
 export default function Home() {
     return (
       <>
@@ -12,6 +12,6 @@ export default function Home() {
         <WhyChooseUs/>
         <App/>
         <Footer />
-        </>
+       </>
     );
 }
