@@ -10,14 +10,12 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-white shadow-md px-6 py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/" passHref>
-            <span className="text-xl font-bold text-[#2D3748] cursor-pointer">
-              MyLogo
-            </span>
-          </Link>
-        </div>
-
+        <div className="flex items-center space-x-3">
+               <svg className="h-8 w-auto text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              <span className="text-2xl font-bold text-gray-900">VillaVista</span>
+            </div>
         {/* Hamburger button shown on small screens */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
@@ -65,6 +63,16 @@ const Navbar: React.FC = () => {
               </span>
             </Link>
           </li>
+
+          <li>
+            <Link href="/venue" passHref>
+              <span className="block text-gray-700 hover:text-blue-600 font-medium transition-colors py-2 md:py-0 cursor-pointer">
+                Blog
+              </span>
+            </Link>
+          </li>
+
+
           <li>
             <Link href="/occasions" passHref>
               <span className="block text-gray-700 hover:text-blue-600 font-medium transition-colors py-2 md:py-0 cursor-pointer">
